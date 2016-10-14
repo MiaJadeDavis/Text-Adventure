@@ -13,14 +13,28 @@ rooms = {
         "unknown name" : "UNKNOWNNAME",
         "description" : "DESCRIPTION",
         "exits" : {}
-        }
+        },
+
+    "universal_shuttle" : {
+        "name" : "Shuttle",
+        "unknown name" : "Shuttle",
+        "description" : "You are inside a shuttle.",
+        "exits" : {}
+        },
 
     "GYR_housingblocko_1_room6" : {
         "name" : "Room 6",
         "unknown name" : "Room 6",
         "description" : "DESCRIPTION",
         "exits" : {}
-        }
+        },
+
+    "GYR_shuttlestation" : {
+        "name" : "Shuttle Station",
+        "unknown name" : "UNKNOWNNAME",
+        "description" : "DESCRIPTION",
+        "exits" : {}
+        },
     
     "IGY_hq_4_briefing2" : {
         "name" : "Briefing Room 2",
