@@ -1,0 +1,16 @@
+{
+"DIO_clonedepot_0_clonerepository" : {
+        "name" : "Clone Repository",
+        "unknown name" : "UNKNOWN",
+        "description" : "DESCRIPTION",
+        "exits" : ["DIO_clonedepot_0_reception"],
+		"objects" : []
+        },
+		
+"DIO_clonedepot_0_reception" : {
+        "name" : "Clone Depot Reception",
+        "unknown name" : "UNKNOWN",
+        "description" : "DESCRIPTION",
+        "exits" : {}
+        },
+}

@@ -2,6 +2,8 @@ import random
 
 class Player():
     def __init__(self):
+        self.location = None
+        
         self.name = ""
         self.clone_number = 1
         self.security_clearance = "R"

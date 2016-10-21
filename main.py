@@ -4,6 +4,7 @@ import random
 from toggled_frame import Toggled_Frame
 
 import comments
+import parse
 
 class Window(tk.Tk):
     def __init__(self, *args, **kwargs):
@@ -100,6 +101,32 @@ class Game(tk.Frame):
         
         self.ent_commands = tk.Entry(self.frm_commands)
         self.ent_commands.pack(fill=tk.X)
+
+        self.ent_commands.bind("<Return>", self.On_Enter_Pressed)
+        self.txt_commands.config(state="disabled")
+
+    def Print_Information(self):
+        pass
+
+    def Process_Command(self, text):
+        print("process")
+
+    def On_Enter_Pressed(self, e):
+        user_input = e.widget.get()
+        
+        e.widget.delete("0", tk.END)
+
+        self.Process_Command(parse.Parse_Input(user_input))
+
+        self.Print_Information()
+
+    def Insert_Text(self, text):
+        self.txt_commands.config(state="normal")
+        
+        self.txt_commands.delete("0.0", tk.END)
+        self.txt_commands.insert("0.0", text)
+        
+        self.txt_commands.config(state="disabled")
 
     def New_Game(self):
         while True:
